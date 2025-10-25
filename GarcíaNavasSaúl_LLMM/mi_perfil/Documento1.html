@@ -63,7 +63,7 @@
             <a href="#datos">Datos personales</a> |
             <a href="#formacion">Formación</a> |
             <a href="#habilidades">Habilidades e intereses</a> |
-            <a href="#tabla">Horario de clases</a> |
+            <a href="#horario">Horario de clases</a> |
             <a href="#contacto">Contacto</a> |
             <a href="#formulario">Formulario de recopilación de información</a>
         </nav>
@@ -129,7 +129,7 @@
 
     <!--Tabla-->
     <div>
-        <div id="tabla">
+        <div id="horario">
             <h2>Horario de clases</h2>
 
             <head>
@@ -144,56 +144,77 @@
                 </style>
             </head>
 
-            <body>
-                <table>
-                    <caption>Horario</caption>
-                    <thead>
-                        <tr>
-                            <th>Hora</th>
-                            <th>Lunes</th>
-                            <th>Martes</th>
-                            <th>Miercoles</th>
-                            <th>Jueves</th>
-                            <th>Viernes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>8.30-9.30</td>
-                            <td rowspan="3">Lenguaje de marcas y sistemas de gestión de la información</td>
-                            <td rowspan="3">Sistemas informáticos</td>
-                            <td rowspan="3">Entornos de desarrollo</td>
-                            <td rowspan="3">Bases de Datos</td>
-                            <td rowspan="3">Programación</td>
-                        </tr>
-                        <tr>
-                            <td>9.30-10.30</td>
-                        </tr>
-                        <tr>
-                            <td>10.30-11.30</td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">Descanso</td>
-                        </tr>
-                        <tr>
-                            <td>12.00-13.00</td>
-                            <td rowspan="3">Programación</td>
-                            <td rowspan="3">Bases de Datos</td>
-                            <td>Sostenibilidad</td>
-                            <td rowspan="3">Programación</td>
-                            <td rowspan="3">Itinerario personal para la empleabilidad</td>
-                        </tr>
-                        <tr>
-                            <td>13.00-14.00</td>
-                            <td rowspan="2">Sistemas informáticos</td>
-                        </tr>
-                        <tr>
-                            <td>14.00-15.00</td>
-                        </tr>
+            <!--Explicación breve de lo que hace este bloque-->
+            <!--La etiqueta <table> sirve para crear la tabla en si-->
 
-                    </tbody>
-                </table>
-            </body>
+            <table>
+
+                <!--La etiqueta <caption> sirve para poner una descripción o titulo a la tabla-->
+
+                <caption>Horario</caption>
+
+                <!--La etiqueta <thead> sirve para crear el encabezado de la tabla-->
+                <!--La etiqueta <colgroup> tiene la función de agrupar columnas para darles unas caracteristicas a todas las celdas al mismo tiempo-->
+                <!--El atributo style sirve para ponerle unas caracteristicas esteticas especificas a alguna etiqueta-->
+
+                <thead>
+                    <colgroup style="background-color: aqua;">
+                    <tr>
+                        <th>Hora</th>
+                        <th style="background-color: aqua;">Lunes</th>
+                        <th style="background-color: aqua;">Martes</th>
+                        <th style="background-color: aqua;">Miercoles</th>
+                        <th style="background-color: aqua;">Jueves</th>
+                        <th style="background-color: aqua;">Viernes</th>
+                    </tr>
+                    </colgroup>
+                </thead>
+
+                <!--La etiqueta <tbody> se usa para crear la sección la parte principal de la tabla-->
+
+                <tbody>
+
+                    <!--La etiqueta <tr> sirve para establecer una fila con un numero indefinido de celdas las cuales se rellenan con la etiqueta <td>-->
+                    <!--El atributo rowspan se puede usar para agrupar varias celdas de diferentes filas pero de la misma columna-->
+
+                    <tr>
+                        <td>8.30-9.30</td>
+                        <td rowspan="3">Lenguaje de marcas y sistemas de gestión de la información</td>
+                        <td rowspan="3">Sistemas informáticos</td>
+                        <td rowspan="3">Entornos de desarrollo</td>
+                        <td rowspan="3">Bases de Datos</td>
+                        <td rowspan="3">Programación</td>
+                    </tr>
+                    <tr>
+                        <td>9.30-10.30</td>
+                    </tr>
+                    <tr>
+                        <td>10.30-11.30</td>
+                    </tr>
+                    <tr>
+
+                        <!--El atributo colspan tiene la función de unir diferentes celdas de la misma fila pero de diferentes columnas-->
+
+                        <td colspan="6">Descanso</td>
+                    </tr>
+                    <tr>
+                        <td>12.00-13.00</td>
+                        <td rowspan="3">Programación</td>
+                        <td rowspan="3">Bases de Datos</td>
+                        <td>Sostenibilidad</td>
+                        <td rowspan="3">Programación</td>
+                        <td rowspan="3">Itinerario personal para la empleabilidad</td>
+                    </tr>
+                    <tr>
+                        <td>13.00-14.00</td>
+                        <td rowspan="2">Sistemas informáticos</td>
+                    </tr>
+                    <tr>
+                        <td>14.00-15.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -226,6 +247,13 @@
     <div id="formulario">
         <h2>Formulario de currículum</h2>
         <form action="proceso.php" method="post">
+
+            <!--Explicación breve de lo que hace este bloque-->
+            <!--La etiqueta <fieldset> tiene la función de crear un recuadro en el que poner otros elementos-->
+            <!--La etiqueta <legend> funciona como titulo de el recuadro creado por <fieldset>-->
+            <!--La etiqueta <input> y sus consiguientes atributos(type,name...) sirven para crear un recuadro rellenable en el que se puede introducir información-->
+            <!--La etiqueta <br> sirve para dejar una linea de separación-->
+
             <fieldset>
                 <legend>Datos Personales</legend>
                 Nombre:<input type="text" name="nombre"> <br><br>
@@ -238,20 +266,22 @@
                 <br><br>
             </fieldset>
 
+            <!--La etiqueta <select> se usa para establecer un recuadro que pide información similar al <input> pero con la diferencia de que tu tienes que introducir una selección de opciones de la cual prodras seleccionar una. Además las opciones las introduciras a trevass de la etiqueta <option>-->
+
             <fieldset>
                 <legend>Contacto</legend>
                 Correo Electrónico: <input type="text" name="Correo"> <br><br>
                 Código Postal: <input type="text" name="codigo_postal"> <br><br>
                 Dirección: <input type="text" name="dirección"> <br><br>
-                Ciudad: <select name="ciudad" required> 
-                <option value="Jaén">Jaén</option>
-                <option value="Cádiz">Cádiz</option>
-                <option value="Córdoba">Córdoba</option>
-                <option value="Granada">Granada</option>
-                <option value="Huelva">Huelva</option>
-                <option value="Almería">Almería</option>
-                <option value="Málaga ">Málaga</option>
-                <option value="Sevilla">Sevilla</option>
+                Ciudad: <select name="ciudad" required>
+                    <option value="Jaén">Jaén</option>
+                    <option value="Cádiz">Cádiz</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Huelva">Huelva</option>
+                    <option value="Almería">Almería</option>
+                    <option value="Málaga ">Málaga</option>
+                    <option value="Sevilla">Sevilla</option>
                 </select>
                 <br><br>
                 Contraseña: <input type="password" name="Contraseña"> <br><br>
@@ -275,7 +305,7 @@
             <fieldset>
                 <legend>Comentarios Adicionales</legend>
                 Escribe aquí tus comentarios: <br>
-            <textarea rows="10" cols="60" placeholder="Escribe tus comentarios aquí..."></textarea>
+                <textarea rows="10" cols="60" placeholder="Escribe tus comentarios aquí..."></textarea>
             </fieldset>
 
             <input type="submit" value="Enviar">
@@ -290,5 +320,4 @@
     </footer>
 
 </body>
-
 </html>
