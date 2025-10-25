@@ -224,13 +224,13 @@
 
     <!--Formulario de recopilación de información-->
     <div id="formulario">
-        <h2>Formulario Completo de recopilación de información</h2>
+        <h2>Formulario de currículum</h2>
         <form action="proceso.php" method="post">
             <fieldset>
                 <legend>Datos Personales</legend>
                 Nombre:<input type="text" name="nombre"> <br><br>
                 Apellidos:<input type="text" name="apellidos"> <br><br>
-                Edad:<input type="text" name="edad"> <br><br>
+                Edad:<input type="number" name="edad"> <br><br>
 
                 Genero: <br><br>
                 <input type="radio" name="genero" value="Hombre">Hombre
@@ -275,10 +275,11 @@
             <fieldset>
                 <legend>Comentarios Adicionales</legend>
                 Escribe aquí tus comentarios: <br>
-                <input type="tel" name="comentarios">Escribe tus comentarios aquí...
+            <textarea rows="10" cols="60" placeholder="Escribe tus comentarios aquí..."></textarea>
             </fieldset>
 
-            <input type="submit" value="enviar">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetear">
         </form>
     </div>
 
