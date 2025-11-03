@@ -1,5 +1,26 @@
-h1 { color: white; background-color: black;}
+/*h1*/
+h1 {text-align: center; color: white; background-color: black;}
 
 /*h3*/
-h3 {background-color: orange;}
-#azul {color: blue;}
+h3 {background-color: darkorange;}
+
+    /*Azul*/
+    #azul {font-style: italic; color: blue;}
+
+    /*Verde*/
+    #verde {font-style: italic; color: green;}
+
+    /*Amarillo*/
+    #amarillo {font-style: italic; color: yellow;}
+
+    /*Cyan*/
+    #cyan {font-style: italic; color: cyan;}
+
+    /*Blanco*/
+    #blanco {font-style: italic; color: white;}
+
+    /*Naranja*/
+    #naranja {font-style: italic; color: orange;}
+
+/*div*/
+div{background-color: gray; border: solid 3px;}
