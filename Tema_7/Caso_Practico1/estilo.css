@@ -1,0 +1,11 @@
+h1 {width: 350px; border: solid blue;}
+
+/*h3*/
+div>h3 {width: 350px; color: white; background-color: gray;}
+#negro {color: white; background-color: black;}
+h3{width: 350px; background-color: aqua;}
+
+/*li*/
+#correcta {color: green;}
+div>li {color: red;}
+li {text-indent: 30px}
