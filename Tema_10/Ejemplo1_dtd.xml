@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE listaclientes [
+    <!ELEMENT listaclientes (cliente+)>
+    <!ELEMENT cliente (nombre,diaentrega+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT diaentrega (#PCDATA)>
+    <!ATTLIST cliente cif CDATA #REQUIRED>
+]>
+
+<listaclientes>
+    <cliente cif="5676443">
+        <nombre>Mercasa</nombre>
+        <diaentrega>Lunes</diaentrega>
+        <diaentrega>Martes</diaentrega>
+    </cliente>
+
+    <cliente cif="5121554">
+        <nombre>Acer SCL</nombre>
+        <diaentrega>Lunes</diaentrega>
+    </cliente> 
+</listaclientes>

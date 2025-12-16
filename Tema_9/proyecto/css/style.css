@@ -1,0 +1,151 @@
+/*Menu de arriba*/
+* {
+    box-sizing: border-box;
+    font-family: "Playwrite NO", cursive;
+}
+
+#enlaces {
+    background: black;
+    padding: 25px;
+    border: solid 2px white;
+}
+
+#enlaces ul {
+    list-style: none;
+    margin: 2px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#enlaces li {
+    float: left;
+    margin-right: 20px;
+}
+
+#enlaces a:hover {
+    background-color: white;
+    padding: 5px;
+}
+
+a:visited {
+    color: lightyellow;
+}
+
+/* bienvenida */
+#bienvenida {
+    padding: 70px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 10px gray;
+    background: radial-gradient(circle, darkcyan, cyan);
+    /*Que diablos es el color ese que hay en el ejemplo?????*/
+}
+
+/* sobre mi */
+#sobre_mi {
+    text-align: left;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+    float: left;
+    width: 60%;
+    position: relative;
+
+}
+
+#sobre_mi:hover {
+    transform: translate(300px, -100px) scale(1.5);
+    transition: 1.5s;
+    /*Esto de las animaciones está guapisimo*/
+}
+
+#foto {
+    float: right;
+    width: 100px;
+    margin-top: 0;
+    /*Y pensar que he estado 15min preguntandome como ponerlo junto al texto y solo lo tenía que poner encima del texto en el HTML*/
+}
+
+#foto:hover {
+    transform: scale(3) rotate(36000deg);
+    transition: 10s;
+    /*me da curiosidad cuantos grados puedo hacer que gire*/
+}
+
+/*redes*/
+#redes {
+    z-index: -1;
+    width: 25%;
+    float: right;
+    text-align: center;
+    position: relative;
+    border: solid white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 15px gray;
+    margin-bottom: 100px;
+}
+
+#boton {
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#boton:hover {
+    background: #005bbb;
+}
+
+#marca_agua {
+    font-size: 25px;
+    color: grey;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* multicolumnas */
+#texto-multicolumna {
+    clear: both;
+    margin-top: 50px;
+}
+
+#texto-multicolumna p {
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 2px solid blue;
+    margin: 20px;
+}
+
+/* hobbies */
+#hobbies {
+    margin: 30px;
+}
+
+#hobbie {
+    display: inline-block;
+    padding: 15px 25px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+#hobbie:hover {
+    transform: scale(2) translate(50px, -25px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+    margin-top: 40px;
+}

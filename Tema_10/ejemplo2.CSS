@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    display: block;
+}
+informatica{
+    background-color: chocolate;
+    width: 30px;
+    padding: 5px;
+    margin-left: 10px;
+    border: solid 3px blue;
+    width: 300px;
+}
+informatica.before{
+    
+}
